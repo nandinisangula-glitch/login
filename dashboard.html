@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Live Classroom Monitoring</h2>
+    <img src="{{ url_for('video_feed') }}" width="700">
+</body>
+</html>a<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>ClassSense AI - Live Monitoring</h1>
+
+<img src="{{ url_for('video_feed') }}" width="700">
+
+<br><br>
+
+<a href="/download_report">
+    <button>Download Attendance Report</button>
+</a>
+
+<a href="/insights">
+    <button>View AI Insights</button>
+</a>
+
+</body>
+</html>
